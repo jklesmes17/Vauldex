@@ -1,4 +1,5 @@
 (function() {
+<<<<<<< Updated upstream
   $(function() {
     var getDate;
     getDate = function() {
@@ -9,6 +10,9 @@
     };
     return getDate();
   });
+=======
+
+>>>>>>> Stashed changes
 
 }).call(this);
 

@@ -1,2 +1,6 @@
 [0m[[0minfo[0m] [0mSass compiling on 1 source(s)[0m
+<<<<<<< Updated upstream
 [0m[[0minfo[0m] [0mSass compilation results: /Users/fixerinit2/Projects/Vauldex/target/web/sass/main/stylesheets/main.css, /Users/fixerinit2/Projects/Vauldex/target/web/sass/main/stylesheets/main.min.css[0m
+=======
+[0m[[0minfo[0m] [0mSass compilation results: /Volumes/Development/Projects/Vauldex/target/web/sass/main/stylesheets/main.css, /Volumes/Development/Projects/Vauldex/target/web/sass/main/stylesheets/main.min.css[0m
+>>>>>>> Stashed changes

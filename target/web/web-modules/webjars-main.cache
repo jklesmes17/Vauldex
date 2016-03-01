@@ -34,8 +34,13 @@ momentjs/locale/lt.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/l
 validate.js/docs/public/stylesheets/normalize.css:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/docs/public/stylesheets/normalize.css
 foundation/js/foundation.util.nest.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.util.nest.js
 validate.js/specs/validate-helpers-spec.js:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/specs/validate-helpers-spec.js
+<<<<<<< Updated upstream
 foundation/js/foundation.accordionMenu.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.accordionMenu.js
 normalize.css/normalize.css:1404811070000:META-INF/resources/webjars/normalize.css/3.0.1/normalize.css
+=======
+normalize.css/normalize.css:1404811070000:META-INF/resources/webjars/normalize.css/3.0.1/normalize.css
+foundation/js/foundation.accordionMenu.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.accordionMenu.js
+>>>>>>> Stashed changes
 foundation/scss/components/_tabs.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_tabs.scss
 foundation/scss/forms/_select.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/forms/_select.scss
 foundation/js/foundation.core.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.core.js
@@ -44,16 +49,28 @@ foundation/scss/components/_media-object.scss:1456461374000:META-INF/resources/w
 momentjs/locale/nl.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/nl.js
 foundation/js/foundation.dropdown.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.dropdown.js
 validate.js/specs/validators/equality-spec.js:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/specs/validators/equality-spec.js
+<<<<<<< Updated upstream
 foundation/dist/foundation-rtl.min.css:1456461374000:META-INF/resources/webjars/foundation/6.2.0/dist/foundation-rtl.min.css
 font-awesome/scss/_bordered-pulled.scss:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/scss/_bordered-pulled.scss
 foundation/scss/util/_selector.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/util/_selector.scss
 modernizr/modernizr.js:1413345944000:META-INF/resources/webjars/modernizr/2.8.3/modernizr.js
+=======
+font-awesome/scss/_bordered-pulled.scss:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/scss/_bordered-pulled.scss
+foundation/dist/foundation-rtl.min.css:1456461374000:META-INF/resources/webjars/foundation/6.2.0/dist/foundation-rtl.min.css
+modernizr/modernizr.js:1413345944000:META-INF/resources/webjars/modernizr/2.8.3/modernizr.js
+foundation/scss/util/_selector.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/util/_selector.scss
+>>>>>>> Stashed changes
 foundation/js/foundation.interchange.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.interchange.js
 momentjs/locale/tzm-latn.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/tzm-latn.js
 foundation/js/foundation.orbit.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.orbit.js
 momentjs/min/moment-with-locales.min.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/min/moment-with-locales.min.js
+<<<<<<< Updated upstream
 foundation/scss/components/_top-bar.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_top-bar.scss
 font-awesome/scss/font-awesome.scss:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/scss/font-awesome.scss
+=======
+font-awesome/scss/font-awesome.scss:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/scss/font-awesome.scss
+foundation/scss/components/_top-bar.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_top-bar.scss
+>>>>>>> Stashed changes
 backbonejs/backbone-min.js:1444190948000:META-INF/resources/webjars/backbonejs/1.2.3/backbone-min.js
 fastclick/fastclick.js:1410926364000:META-INF/resources/webjars/fastclick/1.0.3/fastclick.js
 momentjs/webjars-requirejs.js:1452480368000:META-INF/resources/webjars/momentjs/2.11.1/webjars-requirejs.js
@@ -114,11 +131,19 @@ jquery-cookie/webjars-requirejs.js:1387851988000:META-INF/resources/webjars/jque
 validate.js/specs/validators/exclusion-spec.js:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/specs/validators/exclusion-spec.js
 momentjs/locale/en-ca.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/en-ca.js
 foundation/js/foundation.dropdownMenu.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.dropdownMenu.js
+<<<<<<< Updated upstream
 foundation/scss/components/_dropdown.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_dropdown.scss
 font-awesome/fonts/FontAwesome.otf:1448242122000:META-INF/resources/webjars/font-awesome/4.5.0/fonts/FontAwesome.otf
 foundation/scss/components/_accordion-menu.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_accordion-menu.scss
 momentjs/locale/br.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/br.js
 backbonejs/backbone.js:1444190948000:META-INF/resources/webjars/backbonejs/1.2.3/backbone.js
+=======
+font-awesome/fonts/FontAwesome.otf:1448242122000:META-INF/resources/webjars/font-awesome/4.5.0/fonts/FontAwesome.otf
+foundation/scss/components/_dropdown.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_dropdown.scss
+foundation/scss/components/_accordion-menu.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_accordion-menu.scss
+backbonejs/backbone.js:1444190948000:META-INF/resources/webjars/backbonejs/1.2.3/backbone.js
+momentjs/locale/br.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/br.js
+>>>>>>> Stashed changes
 jquery/jquery.min.js:1456211670000:META-INF/resources/webjars/jquery/2.2.1/jquery.min.js
 momentjs/locale/bg.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/bg.js
 momentjs/locale/en-gb.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/en-gb.js
@@ -139,8 +164,13 @@ momentjs/locale/de.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/l
 momentjs/locale/sv.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/sv.js
 validate.js/specs/vendor/xdate.js:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/specs/vendor/xdate.js
 validate.js/CNAME:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/CNAME
+<<<<<<< Updated upstream
 foundation/scss/components/_visibility.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_visibility.scss
 backbonejs/webjars-requirejs.js:1444190946000:META-INF/resources/webjars/backbonejs/1.2.3/webjars-requirejs.js
+=======
+backbonejs/webjars-requirejs.js:1444190946000:META-INF/resources/webjars/backbonejs/1.2.3/webjars-requirejs.js
+foundation/scss/components/_visibility.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_visibility.scss
+>>>>>>> Stashed changes
 font-awesome/css/font-awesome-jsf.css:1448328224000:META-INF/resources/webjars/font-awesome/4.5.0/css/font-awesome-jsf.css
 validate.js/specs/validate-async-spec.js:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/specs/validate-async-spec.js
 font-awesome/fonts/fontawesome-webfont.woff2:1448242122000:META-INF/resources/webjars/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2
@@ -179,8 +209,13 @@ momentjs/locale/bs.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/l
 momentjs/locale/ms.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/ms.js
 foundation/dist/foundation.min.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/dist/foundation.min.js
 momentjs/locale/sr-cyrl.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/sr-cyrl.js
+<<<<<<< Updated upstream
 foundation/scss/components/_menu.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_menu.scss
 font-awesome/scss/_variables.scss:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/scss/_variables.scss
+=======
+font-awesome/scss/_variables.scss:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/scss/_variables.scss
+foundation/scss/components/_menu.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_menu.scss
+>>>>>>> Stashed changes
 foundation/scss/components/_flex-video.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_flex-video.scss
 foundation/scss/components/_orbit.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_orbit.scss
 validate.js/specs/vendor/jasmine-promise.js:1436768794000:META-INF/resources/webjars/validate.js/0.8.0/specs/vendor/jasmine-promise.js
@@ -189,9 +224,15 @@ momentjs/locale/ru.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/l
 font-awesome/scss/_path.scss:1448242122000:META-INF/resources/webjars/font-awesome/4.5.0/scss/_path.scss
 underscorejs/webjars-requirejs.js:1427957754000:META-INF/resources/webjars/underscorejs/1.8.3/webjars-requirejs.js
 momentjs/locale/zh-tw.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/zh-tw.js
+<<<<<<< Updated upstream
 foundation/js/foundation.reveal.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.reveal.js
 underscorejs/underscore-min.js:1427934720000:META-INF/resources/webjars/underscorejs/1.8.3/underscore-min.js
 Placeholders.js/placeholders.min.js:1388818706000:META-INF/resources/webjars/Placeholders.js/3.0.2/placeholders.min.js
+=======
+Placeholders.js/placeholders.min.js:1388818706000:META-INF/resources/webjars/Placeholders.js/3.0.2/placeholders.min.js
+underscorejs/underscore-min.js:1427934720000:META-INF/resources/webjars/underscorejs/1.8.3/underscore-min.js
+foundation/js/foundation.reveal.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.reveal.js
+>>>>>>> Stashed changes
 momentjs/locale/zh-cn.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/zh-cn.js
 momentjs/locale/bn.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/bn.js
 foundation/js/foundation.util.touch.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.util.touch.js
@@ -252,6 +293,7 @@ foundation/dist/foundation-rtl.css:1456461374000:META-INF/resources/webjars/foun
 momentjs/locale/ka.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/ka.js
 foundation/js/foundation.offcanvas.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.offcanvas.js
 foundation/js/foundation.toggler.js:1456461374000:META-INF/resources/webjars/foundation/6.2.0/js/foundation.toggler.js
+<<<<<<< Updated upstream
 foundation/scss/components/_slider.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_slider.scss
 font-awesome/less/bordered-pulled.less:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/less/bordered-pulled.less
 foundation/scss/forms/_range.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/forms/_range.scss
@@ -259,6 +301,15 @@ momentjs/locale/it.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/l
 font-awesome/less/mixins.less:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/less/mixins.less
 momentjs/locale/ms-my.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/ms-my.js
 modernizr/modernizr.min.js:1413345944000:META-INF/resources/webjars/modernizr/2.8.3/modernizr.min.js
+=======
+font-awesome/less/bordered-pulled.less:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/less/bordered-pulled.less
+foundation/scss/components/_slider.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/components/_slider.scss
+foundation/scss/forms/_range.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/forms/_range.scss
+momentjs/locale/it.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/it.js
+modernizr/modernizr.min.js:1413345944000:META-INF/resources/webjars/modernizr/2.8.3/modernizr.min.js
+font-awesome/less/mixins.less:1448242120000:META-INF/resources/webjars/font-awesome/4.5.0/less/mixins.less
+momentjs/locale/ms-my.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/ms-my.js
+>>>>>>> Stashed changes
 foundation/scss/forms/_help-text.scss:1456461374000:META-INF/resources/webjars/foundation/6.2.0/scss/forms/_help-text.scss
 momentjs/locale/bo.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/bo.js
 momentjs/locale/cv.js:1452287586000:META-INF/resources/webjars/momentjs/2.11.1/locale/cv.js

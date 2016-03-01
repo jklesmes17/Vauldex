@@ -3,11 +3,20 @@
 # ~~~~
 
 # Home page
+<<<<<<< Updated upstream
 GET     /                          controllers.Main.index
 POST    /employee/login            controllers.Main.employeeLoginSubmit
 
 # Employee Dashboard
 GET     /employee/home             controllers.EmpController.empHome
+=======
+GET     /                           controllers.Main.index
+
+# Employee Dashboard
+POST    /employee/login            controllers.Main.employeeLoginSubmit
+GET     /employee/home             controllers.Main.employeeHome
+POST    /employee/time             controllers.Main.timeRecord
+>>>>>>> Stashed changes
 
 # Admin Dashboard
 GET     /admin/login                controllers.Main.adminLogin
