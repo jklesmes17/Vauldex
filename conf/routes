@@ -8,7 +8,7 @@ GET     /                           controllers.Main.index
 # Employee Dashboard
 POST    /employee/login            controllers.Main.employeeLoginSubmit
 GET     /employee/home             controllers.Main.employeeHome
-GET     /employee/time             controllers.Main.timeRecord
+POST    /employee/time             controllers.Main.timeRecord
 
 # Admin Dashboard
 GET     /admin/login                controllers.Main.adminLogin

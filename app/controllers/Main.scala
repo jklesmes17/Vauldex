@@ -24,9 +24,11 @@ class Main @Inject() (
   def index = Action { implicit request =>
     Ok(views.html.index("Your new application is ready.", EmployeeForm.loginForm))
   }
+
   def adminLogin = Action { implicit request =>
     Ok(views.html.admin.login("Admin Login", AdminForm.default))
   }
+
   def adminLoginSubmit = Action { implicit request =>
     AdminForm.default.bindFromRequest.fold (
       formWithErrors => BadRequest(views.html.admin.login("Login Error", formWithErrors)),
@@ -40,9 +42,11 @@ class Main @Inject() (
       }
     )
   }
+
   def adminHome = Action { implicit request =>
     Ok(views.html.admin.home("Welcome to Admin Dashboard", EmployeeForm.default, emanager.all))
   }
+
   def employeeSubmit = Action { implicit request =>
     EmployeeForm.default.bindFromRequest.fold (
       formWithErrors => BadRequest(
@@ -53,6 +57,7 @@ class Main @Inject() (
       }
     )
   }
+
   def employeeLoginSubmit = Action { implicit request =>
     EmployeeForm.loginForm.bindFromRequest.fold (
       formWithErrors => BadRequest(views.html.index("Employee Login Error", formWithErrors)),
@@ -66,6 +71,11 @@ class Main @Inject() (
       }
     )
   }
+
+  def timeRecord = Action { implicit request =>
+    Ok("sdf")
+  }
+
   def employeeHome = Action { implicit request =>
     Ok(views.html.home("Welcome to Employee Dashboard"))
   }

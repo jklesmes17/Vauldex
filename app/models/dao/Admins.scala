@@ -24,15 +24,11 @@ class Admins @Inject() (
   class AdminsTable(tag: Tag) extends Table[Admin](tag, "ADMIN") {
     def username = column[String]("USERNAME")
     def password = column[String]("PASSWORD")
-    def fname = column[String]("FNAME")
-    def lname = column[String]("LNAME")
     def id = column[Int]("ID", O.PrimaryKey, O.AutoInc)
 
     def * = (
       username,
       password,
-      fname,
-      lname,
       id.?
     ) <> (Admin.tupled, Admin.unapply)
   }

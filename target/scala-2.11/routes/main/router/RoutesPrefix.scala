@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Volumes/Development/Projects/vauldex-dtr/conf/routes
-// @DATE:Tue Mar 01 09:02:58 PHT 2016
+// @SOURCE:/Users/fixerinit2/Projects/Vauldex/conf/routes
+// @DATE:Tue Mar 01 10:01:46 PHT 2016
 
 
 package router {

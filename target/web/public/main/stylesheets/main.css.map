@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AAEA,UAAW;EACT,MAAM,ECAM,IAAI;EDChB,OAAO,EAAE,QAAQ;EACjB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;;;AAEX,aAAc;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;;;AAEzB,OAAQ;EACN,MAAM,EAAE,iBAAsB",
-"sources": ["../../../../../app/assets/stylesheets/main.scss","../../../../../app/assets/stylesheets/_settings.scss"],
-"names": [],
-"file": "main.css"
-}

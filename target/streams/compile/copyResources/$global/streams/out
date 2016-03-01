@@ -1,7 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Volumes/Development/Projects/vauldex-dtr/conf/application.conf,/Volumes/Development/Projects/vauldex-dtr/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Volumes/Development/Projects/vauldex-dtr/conf/evolutions,/Volumes/Development/Projects/vauldex-dtr/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Volumes/Development/Projects/vauldex-dtr/conf/logback.xml,/Volumes/Development/Projects/vauldex-dtr/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Volumes/Development/Projects/vauldex-dtr/conf/routes,/Volumes/Development/Projects/vauldex-dtr/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Volumes/Development/Projects/vauldex-dtr/conf/evolutions/default,/Volumes/Development/Projects/vauldex-dtr/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Volumes/Development/Projects/vauldex-dtr/conf/evolutions/default/1.sql,/Volumes/Development/Projects/vauldex-dtr/target/scala-2.11/classes/evolutions/default/1.sql)[0m

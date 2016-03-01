@@ -15,6 +15,6 @@ class AdminManager @Inject() (
   def login(username: String, password: String) = Await.result (
     admins.login(username, password) map {
       case Some(log) => log
-      case None      => Admin("","","","",None)
+      case None      => Admin("","",None)
   }, 5 seconds)
 }

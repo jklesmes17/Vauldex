@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Volumes/Development/Projects/vauldex-dtr/conf/routes
-// @DATE:Tue Mar 01 09:02:58 PHT 2016
+// @SOURCE:/Users/fixerinit2/Projects/Vauldex/conf/routes
+// @DATE:Tue Mar 01 10:01:46 PHT 2016
 
 package router
 
@@ -49,7 +49,7 @@ class Routes(
     ("""GET""", this.prefix, """controllers.Main.index"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/login""", """controllers.Main.employeeLoginSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/home""", """controllers.Main.employeeHome"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/time""", """controllers.Main.timeRecord"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/time""", """controllers.Main.timeRecord"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/login""", """controllers.Main.adminLogin"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/login""", """controllers.Main.adminLoginSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/home""", """controllers.Main.adminHome"""),
@@ -115,7 +115,7 @@ class Routes(
   )
 
   // @LINE:11
-  private[this] lazy val controllers_Main_timeRecord3_route = Route("GET",
+  private[this] lazy val controllers_Main_timeRecord3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("employee/time")))
   )
   private[this] lazy val controllers_Main_timeRecord3_invoker = createInvoker(
@@ -125,7 +125,7 @@ class Routes(
       "controllers.Main",
       "timeRecord",
       Nil,
-      "GET",
+      "POST",
       """""",
       this.prefix + """employee/time"""
     )
