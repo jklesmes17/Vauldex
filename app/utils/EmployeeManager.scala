@@ -11,14 +11,10 @@ import models.dao.Employees
 class EmployeeManager @Inject() (
   val employees: Employees
 ) {
-  def empty = Employee("","","","","","","","",0,None)
+  def insert(employee: Employee) = Await.result (employees.insert(employee), 5 seconds)
 
-  def insert(employee: Employee) = Await.result (
-    employees.insert(employee), 5 seconds)
   def all = Await.result ( employees.all, 5 seconds )
+
   def login(username: String, password: String) = Await.result(
-    employees.login(username, password) map {
-      case Some(log) => log
-      case None => empty
-    }, 5 seconds )
+    employees.login(username, password), 5 seconds )
 }

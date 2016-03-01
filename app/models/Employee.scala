@@ -9,6 +9,7 @@ case class Employee (
   tin: String,
   sss: String,
   pagibig: String,
+  macAddr: String,
   ratePerHour: Int,
   optId: Option[Int]
 ) { def id = optId.getOrElse(0) }

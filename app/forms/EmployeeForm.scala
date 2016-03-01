@@ -17,6 +17,7 @@ object EmployeeForm {
     "tin"         -> text,
     "sss"         -> text,
     "pagibig"     -> text,
+    "macAddr"     -> nonEmptyText,
     "ratePerHour" -> number,
     "optId"       -> optional(number)
   )(Employee.apply)(Employee.unapply))

@@ -15,7 +15,11 @@ class Employees @Inject() (
 ) extends HasDatabaseConfigProvider[RelationalProfile] {
 
   import slick.driver.PostgresDriver.api._
-  val query = TableQuery[EmployeesTable]
+
+  object query extends TableQuery(new EmployeesTable(_)) {
+    def filterCredentials(username: String, password: String) =
+      this.filter(r => r.username === username && r.password === password)
+  }
 
   def insert(employee: Employee): Future[Boolean] =
     db.run( (query += (employee)).map(_ > 0) )
@@ -23,9 +27,8 @@ class Employees @Inject() (
   def all: Future[Seq[Employee]] =
     db.run( query.sortBy(_.id.desc).result )
 
-  def login(username: String, password: String): Future[Option[Employee]] = db.run (
-    query.filter(r => r.username === username && r.password === password).result.headOption
-  )
+  def login(username: String, password: String) : Future[Option[Employee]] =
+    db.run(query.filterCredentials(username, password).result.headOption)
 
   /** Employee Table Definition */
   class EmployeesTable(tag: Tag) extends Table[Employee](tag, "EMPLOYEE") {
@@ -37,6 +40,7 @@ class Employees @Inject() (
     def tin = column[String]("TIN")
     def sss = column[String]("SSS")
     def pagibig = column[String]("PAGIBIG")
+    def macAddr = column[String]("MAC_ADDR")
     def ratePerHour = column[Int]("RATE_PER_HOUR")
     def id = column[Int]("ID", O.PrimaryKey, O.AutoInc)
 
@@ -49,6 +53,7 @@ class Employees @Inject() (
       tin,
       sss,
       pagibig,
+      macAddr,
       ratePerHour,
       id.?
     ) <> (Employee.tupled, Employee.unapply)

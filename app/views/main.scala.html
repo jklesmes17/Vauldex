@@ -3,27 +3,27 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <title>@title</title>
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.min.css"))">
-        <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("foundation-flex.css"))">
-        <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("font-awesome.css"))">
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+  <head>
+    <title>@title</title>
+      <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+      <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.min.css"))">
+      <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("foundation-flex.css"))">
+      <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("font-awesome.css"))">
+      <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
 
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))"></script>
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("underscore.js"))"></script>
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("backbone.js"))"></script>
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("moment.min.js"))"></script>
-    </head>
-    <body>
-        @content
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.core.js"))"></script>
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.min.js"))"></script>
-        <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.reveal.js"))"></script>
-        <script src="@routes.Assets.at("javascripts/main.js")"></script>
-        <script>
-            $(document).foundation();
-        </script>
-    </body>
+      <script src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))"></script>
+      <script src="@routes.WebJarAssets.at(WebJarAssets.locate("underscore.js"))"></script>
+      <script src="@routes.WebJarAssets.at(WebJarAssets.locate("backbone.js"))"></script>
+      <script src="@routes.WebJarAssets.at(WebJarAssets.locate("moment.min.js"))"></script>
+  </head>
+  <body>
+    @content
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.core.js"))"></script>
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.min.js"))"></script>
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.reveal.js"))"></script>
+    <script src="@routes.Assets.at("javascripts/main.js")"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>

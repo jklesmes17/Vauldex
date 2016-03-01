@@ -47,6 +47,7 @@ class Main @Inject() (
     Ok(views.html.admin.home("Welcome to Admin Dashboard", EmployeeForm.default, emanager.all))
   }
 
+  /** FOR MOVING TO ANOTHER CONTROLLER */
   def employeeSubmit = Action { implicit request =>
     EmployeeForm.default.bindFromRequest.fold (
       formWithErrors => BadRequest(
@@ -60,23 +61,13 @@ class Main @Inject() (
 
   def employeeLoginSubmit = Action { implicit request =>
     EmployeeForm.loginForm.bindFromRequest.fold (
-      formWithErrors => BadRequest(views.html.index("Employee Login Error", formWithErrors)),
-      { case (username, password) =>
-        val isLogin = emanager.login(username, password)
-        isLogin.username.isEmpty match {
-          case true  => InternalServerError
-          case false => Redirect(routes.Main.employeeHome)
-            .withSession("idEmployee" -> isLogin.id.toString)
-        }
+      formWithErrors => BadRequest(views.html.index("Employee Login Error", formWithErrors)), {
+        case (username, password) =>
+          emanager.login(username, password) match {
+            case Some(res) => Redirect(routes.EmpController.empHome).withSession("empId" -> res.id.toString)
+            case None => InternalServerError
+          }
       }
     )
-  }
-
-  def timeRecord = Action { implicit request =>
-    Ok("sdf")
-  }
-
-  def employeeHome = Action { implicit request =>
-    Ok(views.html.home("Welcome to Employee Dashboard"))
   }
 }

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/fixerinit2/Projects/Vauldex/conf/routes
-// @DATE:Tue Mar 01 10:01:46 PHT 2016
+// @DATE:Tue Mar 01 11:20:41 PHT 2016
 
 package router
 
@@ -17,9 +17,11 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Main_2: controllers.Main,
-  // @LINE:20
+  // @LINE:10
+  EmpController_3: controllers.EmpController,
+  // @LINE:19
   Assets_1: controllers.Assets,
-  // @LINE:21
+  // @LINE:20
   WebJarAssets_0: controllers.WebJarAssets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -28,17 +30,19 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Main_2: controllers.Main,
-    // @LINE:20
+    // @LINE:10
+    EmpController_3: controllers.EmpController,
+    // @LINE:19
     Assets_1: controllers.Assets,
-    // @LINE:21
+    // @LINE:20
     WebJarAssets_0: controllers.WebJarAssets
-  ) = this(errorHandler, Main_2, Assets_1, WebJarAssets_0, "/")
+  ) = this(errorHandler, Main_2, EmpController_3, Assets_1, WebJarAssets_0, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, Main_2, Assets_1, WebJarAssets_0, prefix)
+    new Routes(errorHandler, Main_2, EmpController_3, Assets_1, WebJarAssets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -48,8 +52,7 @@ class Routes(
   def documentation = List(
     ("""GET""", this.prefix, """controllers.Main.index"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/login""", """controllers.Main.employeeLoginSubmit"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/home""", """controllers.Main.employeeHome"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/time""", """controllers.Main.timeRecord"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """employee/home""", """controllers.EmpController.empHome"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/login""", """controllers.Main.adminLogin"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/login""", """controllers.Main.adminLoginSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/home""", """controllers.Main.adminHome"""),
@@ -80,7 +83,7 @@ class Routes(
     )
   )
 
-  // @LINE:9
+  // @LINE:7
   private[this] lazy val controllers_Main_employeeLoginSubmit1_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("employee/login")))
   )
@@ -92,50 +95,33 @@ class Routes(
       "employeeLoginSubmit",
       Nil,
       "POST",
-      """ Employee Dashboard""",
+      """""",
       this.prefix + """employee/login"""
     )
   )
 
   // @LINE:10
-  private[this] lazy val controllers_Main_employeeHome2_route = Route("GET",
+  private[this] lazy val controllers_EmpController_empHome2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("employee/home")))
   )
-  private[this] lazy val controllers_Main_employeeHome2_invoker = createInvoker(
-    Main_2.employeeHome,
+  private[this] lazy val controllers_EmpController_empHome2_invoker = createInvoker(
+    EmpController_3.empHome,
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.Main",
-      "employeeHome",
+      "controllers.EmpController",
+      "empHome",
       Nil,
       "GET",
-      """""",
+      """ Employee Dashboard""",
       this.prefix + """employee/home"""
     )
   )
 
-  // @LINE:11
-  private[this] lazy val controllers_Main_timeRecord3_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("employee/time")))
-  )
-  private[this] lazy val controllers_Main_timeRecord3_invoker = createInvoker(
-    Main_2.timeRecord,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Main",
-      "timeRecord",
-      Nil,
-      "POST",
-      """""",
-      this.prefix + """employee/time"""
-    )
-  )
-
-  // @LINE:14
-  private[this] lazy val controllers_Main_adminLogin4_route = Route("GET",
+  // @LINE:13
+  private[this] lazy val controllers_Main_adminLogin3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/login")))
   )
-  private[this] lazy val controllers_Main_adminLogin4_invoker = createInvoker(
+  private[this] lazy val controllers_Main_adminLogin3_invoker = createInvoker(
     Main_2.adminLogin,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -148,11 +134,11 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_Main_adminLoginSubmit5_route = Route("POST",
+  // @LINE:14
+  private[this] lazy val controllers_Main_adminLoginSubmit4_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/login")))
   )
-  private[this] lazy val controllers_Main_adminLoginSubmit5_invoker = createInvoker(
+  private[this] lazy val controllers_Main_adminLoginSubmit4_invoker = createInvoker(
     Main_2.adminLoginSubmit,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -165,11 +151,11 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_Main_adminHome6_route = Route("GET",
+  // @LINE:15
+  private[this] lazy val controllers_Main_adminHome5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/home")))
   )
-  private[this] lazy val controllers_Main_adminHome6_invoker = createInvoker(
+  private[this] lazy val controllers_Main_adminHome5_invoker = createInvoker(
     Main_2.adminHome,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -182,11 +168,11 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_Main_employeeSubmit7_route = Route("POST",
+  // @LINE:16
+  private[this] lazy val controllers_Main_employeeSubmit6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/employee")))
   )
-  private[this] lazy val controllers_Main_employeeSubmit7_invoker = createInvoker(
+  private[this] lazy val controllers_Main_employeeSubmit6_invoker = createInvoker(
     Main_2.employeeSubmit,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -199,11 +185,11 @@ class Routes(
     )
   )
 
-  // @LINE:20
-  private[this] lazy val controllers_Assets_at8_route = Route("GET",
+  // @LINE:19
+  private[this] lazy val controllers_Assets_at7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at8_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
     Assets_1.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -216,11 +202,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_WebJarAssets_at9_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_WebJarAssets_at8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("webjars/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_WebJarAssets_at9_invoker = createInvoker(
+  private[this] lazy val controllers_WebJarAssets_at8_invoker = createInvoker(
     WebJarAssets_0.at(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -242,58 +228,52 @@ class Routes(
         controllers_Main_index0_invoker.call(Main_2.index)
       }
   
-    // @LINE:9
+    // @LINE:7
     case controllers_Main_employeeLoginSubmit1_route(params) =>
       call { 
         controllers_Main_employeeLoginSubmit1_invoker.call(Main_2.employeeLoginSubmit)
       }
   
     // @LINE:10
-    case controllers_Main_employeeHome2_route(params) =>
+    case controllers_EmpController_empHome2_route(params) =>
       call { 
-        controllers_Main_employeeHome2_invoker.call(Main_2.employeeHome)
+        controllers_EmpController_empHome2_invoker.call(EmpController_3.empHome)
       }
   
-    // @LINE:11
-    case controllers_Main_timeRecord3_route(params) =>
+    // @LINE:13
+    case controllers_Main_adminLogin3_route(params) =>
       call { 
-        controllers_Main_timeRecord3_invoker.call(Main_2.timeRecord)
+        controllers_Main_adminLogin3_invoker.call(Main_2.adminLogin)
       }
   
     // @LINE:14
-    case controllers_Main_adminLogin4_route(params) =>
+    case controllers_Main_adminLoginSubmit4_route(params) =>
       call { 
-        controllers_Main_adminLogin4_invoker.call(Main_2.adminLogin)
+        controllers_Main_adminLoginSubmit4_invoker.call(Main_2.adminLoginSubmit)
       }
   
     // @LINE:15
-    case controllers_Main_adminLoginSubmit5_route(params) =>
+    case controllers_Main_adminHome5_route(params) =>
       call { 
-        controllers_Main_adminLoginSubmit5_invoker.call(Main_2.adminLoginSubmit)
+        controllers_Main_adminHome5_invoker.call(Main_2.adminHome)
       }
   
     // @LINE:16
-    case controllers_Main_adminHome6_route(params) =>
+    case controllers_Main_employeeSubmit6_route(params) =>
       call { 
-        controllers_Main_adminHome6_invoker.call(Main_2.adminHome)
+        controllers_Main_employeeSubmit6_invoker.call(Main_2.employeeSubmit)
       }
   
-    // @LINE:17
-    case controllers_Main_employeeSubmit7_route(params) =>
-      call { 
-        controllers_Main_employeeSubmit7_invoker.call(Main_2.employeeSubmit)
+    // @LINE:19
+    case controllers_Assets_at7_route(params) =>
+      call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
+        controllers_Assets_at7_invoker.call(Assets_1.at(path, file))
       }
   
     // @LINE:20
-    case controllers_Assets_at8_route(params) =>
-      call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at8_invoker.call(Assets_1.at(path, file))
-      }
-  
-    // @LINE:21
-    case controllers_WebJarAssets_at9_route(params) =>
+    case controllers_WebJarAssets_at8_route(params) =>
       call(params.fromPath[String]("file", None)) { (file) =>
-        controllers_WebJarAssets_at9_invoker.call(WebJarAssets_0.at(file))
+        controllers_WebJarAssets_at8_invoker.call(WebJarAssets_0.at(file))
       }
   }
 }

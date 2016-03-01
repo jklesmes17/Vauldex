@@ -26,11 +26,7 @@ Seq[Any](format.raw/*1.67*/("""
 """),format.raw/*3.1*/("""
 """),_display_(/*4.2*/main(message)/*4.15*/ {_display_(Seq[Any](format.raw/*4.17*/("""
 
-  """),_display_(/*6.4*/form(action = routes.Main.timeRecord)/*6.41*/ {_display_(Seq[Any](format.raw/*6.43*/("""
-
-
-  """)))}),format.raw/*9.4*/("""
-""")))}),format.raw/*10.2*/("""
+""")))}),format.raw/*6.2*/("""
 """))
       }
     }
@@ -51,11 +47,11 @@ Seq[Any](format.raw/*1.67*/("""
 object home extends home_Scope0.home
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 01 10:01:46 PHT 2016
+                  DATE: Tue Mar 01 11:01:32 PHT 2016
                   SOURCE: /Users/fixerinit2/Projects/Vauldex/app/views/home.scala.html
-                  HASH: 76ccc88e1f393bbf2d39390750d94a566a019439
-                  MATRIX: 548->1|723->66|750->84|777->86|798->99|837->101|867->106|912->143|951->145|986->151|1018->153
-                  LINES: 20->1|25->1|26->3|27->4|27->4|27->4|29->6|29->6|29->6|32->9|33->10
+                  HASH: 9eae3721579f9c2c586b1a58bfe8801fd02e09c4
+                  MATRIX: 548->1|723->66|750->84|777->86|798->99|837->101|869->104
+                  LINES: 20->1|25->1|26->3|27->4|27->4|27->4|29->6
                   -- GENERATED --
               */
           
