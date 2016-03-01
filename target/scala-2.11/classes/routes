@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Main.index
+
+# Employee Dashboard
+POST    /employee/login            controllers.Main.employeeLoginSubmit
+GET     /employee/home             controllers.Main.employeeHome
+
+# Admin Dashboard
+GET     /admin/login                controllers.Main.adminLogin
+POST    /admin/login                controllers.Main.adminLoginSubmit
+GET     /admin/home                 controllers.Main.adminHome
+POST    /admin/employee             controllers.Main.employeeSubmit
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /webjars/*file              controllers.WebJarAssets.at(file)

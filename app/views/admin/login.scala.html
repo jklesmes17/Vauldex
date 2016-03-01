@@ -1,0 +1,16 @@
+@(message: String, loginForm: Form[(String, String)])(implicit request: RequestHeader, msg: Messages)
+@import helper._
+
+@main(message) {
+    <div class="row expanded container">
+      <div class="large-5 columns large-centered center-items">
+        @form(action = routes.Main.adminLoginSubmit) {
+              @inputText(loginForm("username"),
+              '_showConstraints -> false)
+              @inputPassword(loginForm("password"),
+              '_showConstraints -> false)
+            <input type="submit" name="adminSubmit" value="Authenticate Admin" class="button alert expanded">
+        }
+      </div>
+    </div>
+}

@@ -1,0 +1,40 @@
+@(message: String, employeeForm: Form[Employee], employees: Seq[Employee])(implicit request: RequestHeader, msg: Messages)
+@import helper._
+
+
+@main(message) {
+
+
+  <div class="row expanded container">
+    <div class="large-12 columns">
+      <ul class="tabs" data-tabs id="admin-main-nav">
+        <li class="tabs-title is-active"><a href="#home" aria-selected="true">Home</a></li>
+        <li class="tabs-title"><a href="#employee">Employee</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="admin-main-nav">
+        <div class="tabs-panel is-active" id="home">
+          <h3>List of Employee</h3>
+         <ol>
+           @for(employee <- employees) {
+              <li>@employee.fname @employee.lname</li>
+           }
+         </ul>
+        </div>
+        <div class="tabs-panel clearfix" id="employee">
+          @form(action = routes.Main.employeeSubmit) {
+            @inputText(employeeForm("username"), '_showConstraints -> false)
+            @inputText(employeeForm("password"), '_showConstraints -> false)
+            @inputText(employeeForm("fname"), '_showConstraints -> false)
+            @inputText(employeeForm("lname"), '_showConstraints -> false)
+            @inputText(employeeForm("mname"), '_showConstraints -> false)
+            @inputText(employeeForm("tin"), '_showConstraints -> false)
+            @inputText(employeeForm("sss"), '_showConstraints -> false)
+            @inputText(employeeForm("pagibig"), '_showConstraints -> false)
+            @inputText(employeeForm("ratePerHour"), '_showConstraints -> false)
+            <input type="submit" name="submit" value="Submit" class="button float-right">
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+}

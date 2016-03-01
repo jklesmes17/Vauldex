@@ -1,0 +1,16 @@
+@import 'settings';
+
+.container {
+  height: $full-height;
+  display: relative;
+  padding: 0;
+  margin: 0;
+}
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border {
+  border: 1px solid $medium-gray;
+}
